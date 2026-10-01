@@ -1,14 +1,16 @@
+import Header from './components/header/Header'
+import Footer from './components/footer/Footer'
+
 import './App.css'
 
 
-function App() {
+export default function App() {
 
     return (
         <>
-            <h1>Hello Project !</h1>
+            <Header />
+            <h1>body !</h1>
+            <Footer />
         </>
     )
 }
-
-
-export default App
