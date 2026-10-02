@@ -1,7 +1,7 @@
 export default function Footer() {
     return (
         <>
-            <p>Learninglingo tm</p>
+            <p>Learninglingo &#8482;</p>
         </>
     );
 }

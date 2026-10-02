@@ -1,7 +1,10 @@
+import styles from './header.module.css'
+
+
 export default function Header() {
     return (
         <>
-            <h2>Header</h2>
+            <h2 className={styles['headerBackground']}>Header</h2>
         </>
     );
 }
