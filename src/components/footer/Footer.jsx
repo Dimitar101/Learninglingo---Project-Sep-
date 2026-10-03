@@ -1,7 +1,10 @@
+import styles from './footer.module.css'
+
+
 export default function Footer() {
     return (
         <>
-            <p>Learninglingo &#8482;</p>
+            <p className={styles['footerBackground']}>Learninglingo &#8482;</p>
         </>
     );
 }

@@ -185,4 +185,6 @@
 
 body {
   background-color: rgb(170, 130, 80);
+  margin: 0;
+  /* padding: 0; */
 }
