@@ -1,7 +1,7 @@
 export default function BigDoor() {
     return (
         <>
-            <p>BigDoor</p>
+            <p className="text-3xl font-bold underline">BigDoor</p>
         </>
     );
 }
