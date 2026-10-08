@@ -1,6 +1,4 @@
-// import Footer from './Footer'
-
-import BigDoor from "../doors/bigDoor/bigDoor";
+import BigDoor from "./bigDoor/bigDoor";
 
 
 export default function Home() {
