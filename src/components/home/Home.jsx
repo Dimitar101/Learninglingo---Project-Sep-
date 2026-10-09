@@ -1,4 +1,4 @@
-import BigDoor from "./bigDoor/bigDoor";
+import BigDoor from "./bigDoor/BigDoor";
 
 
 export default function Home() {

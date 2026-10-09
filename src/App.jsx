@@ -6,7 +6,7 @@ import Header from './components/header/Header'
 import Footer from './components/footer/Footer'
 import Login from './components/login/Login'
 import Home from './components/home/Home';
-import SmallDoor from './components/smallDoor/smallDoor';
+import SmallDoor from './components/smallDoor/SmallDoor';
 import Yinyang from './components/yinyang/Yinyang';
 
 
