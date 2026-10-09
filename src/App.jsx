@@ -7,7 +7,6 @@ import Footer from './components/footer/Footer'
 import Login from './components/login/Login'
 import Home from './components/home/Home'
 import SmallDoor from './components/smallDoor/SmallDoor'
-import Yinyang from './components/yinyang/Yinyang'
 import ChessSquares from './components/home/bigDoor/chessSquares/ChessSquares'
 
 
@@ -27,7 +26,6 @@ export default function App() {
 
 
 
-            <Yinyang />
             <Footer />
 
             <Login />
