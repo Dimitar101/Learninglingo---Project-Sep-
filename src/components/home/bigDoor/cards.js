@@ -11,7 +11,7 @@ const cards =
         "id": "2",
         "gameName": "XXX",
         "img": "../../src/assets/ch.jpg",
-        "description": "Learn the algebraic Chess notation square names by practicing. Click a square and see the name. View is from White perspective.",
+        "description": "asd",
         "path": "/chessling"
     },
     "3": {
@@ -20,6 +20,13 @@ const cards =
         "img": "../../src/assets/geo.jpg",
         "description": "Browse, upload, and like inspirational quotes that uplift and motivate. Join a community that spreads positivity daily.",
         "path": "/geo"
+    },
+    "4": {
+        "id": "4",
+        "gameName": "Chess Squares",
+        "img": "../../src/assets/geo.jpg",
+        "description": "Learn the algebraic Chess notation square names by practicing. Click a square and see the name. View is from White perspective.",
+        "path": "/chessling"
     }
 }
 

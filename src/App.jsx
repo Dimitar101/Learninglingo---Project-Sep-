@@ -1,13 +1,14 @@
 import './App.css'
 
-import { Routes, Route } from 'react-router';
+import { Routes, Route } from 'react-router'
 
 import Header from './components/header/Header'
 import Footer from './components/footer/Footer'
 import Login from './components/login/Login'
-import Home from './components/home/Home';
-import SmallDoor from './components/smallDoor/SmallDoor';
-import Yinyang from './components/yinyang/Yinyang';
+import Home from './components/home/Home'
+import SmallDoor from './components/smallDoor/SmallDoor'
+import Yinyang from './components/yinyang/Yinyang'
+import ChessSquares from './components/home/bigDoor/chessSquares/ChessSquares'
 
 
 export default function App() {
@@ -20,6 +21,7 @@ export default function App() {
 
             <Routes>
                 <Route path="/" element={<Home />} />
+                <Route path="/chessling" element={<ChessSquares />} />
             </Routes>
 
 
