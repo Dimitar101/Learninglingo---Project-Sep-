@@ -1,0 +1,38 @@
+.ldr-yin-yang-spinner {
+    --s: var(--ldr-size, 170px);
+    --c: var(--ldr-color, #000000);
+    width: var(--s);
+    height: var(--s);
+}
+
+.ldr-yin-yang-spinner-disc {
+    fill: color-mix(in srgb, var(--ldr-color, #ca0707) 100%);
+    stroke: var(--c);
+    stroke-width: 2;
+}
+
+.ldr-yin-yang-spinner-green {
+    --s: var(--ldr-size, 170px);
+    --c: var(--ldr-color, #1b8f0c);
+    width: var(--s);
+    height: var(--s);
+}
+
+.ldr-yin-yang-spinner-disc-green {
+    fill: color-mix(in srgb, var(--ldr-color, #ffff) 100%);
+    stroke: var(--c);
+    stroke-width: 2;
+}
+
+.ldr-yin-yang-spinner-half,
+.ldr-yin-yang-spinner-dot {
+    fill: var(--c);
+}
+
+.yinyang {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 360px;
+}
