@@ -24,7 +24,7 @@ const cards =
     "4": {
         "id": "4",
         "gameName": "Chess Squares",
-        "img": "../../src/assets/geo.jpg",
+        "img": "../../../../src/assets/chessling.jpg",
         "description": "Learn the algebraic Chess notation square names by practicing. Click a square and see the name. View is from White perspective.",
         "path": "/chessling"
     }

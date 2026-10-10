@@ -28,7 +28,7 @@ export default function App() {
 
             <Footer />
 
-            <Login />
+            {/* <Login /> */}
         </>
     )
 }
