@@ -1,0 +1,15 @@
+.smallDoor {
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+    font-size: x-large;
+}
+
+.smallDoorWraper {
+    padding-top: 20px;
+}
+
+p:hover {
+    /* text-decoration: underline; */
+    color: blue !important;
+}
