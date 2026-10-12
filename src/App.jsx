@@ -4,7 +4,7 @@ import { Routes, Route } from 'react-router'
 
 import Header from './components/header/Header'
 import Footer from './components/footer/Footer'
-// import Login from './components/login/Login'
+import Login from './components/login/Login'
 import Home from './components/home/Home'
 import ChessSquares from './components/home/bigDoor/chessSquares/ChessSquares'
 // import SmallDoor from './components/hamburgerMenu/smallDoor/SmallDoor'
@@ -23,11 +23,10 @@ export default function App() {
                 <Route path="/" element={<Home />} />
                 <Route path="/chessling" element={<ChessSquares />} />
                 <Route path="/rest-timer" element={<RestTimer />} />
+                <Route path="/login" element={<Login />} />
             </Routes>
 
             <Footer />
-
-            {/* <Login /> */}
         </>
     );
 }
