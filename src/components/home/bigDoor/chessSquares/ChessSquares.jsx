@@ -1,7 +1,7 @@
 import { useState } from "react"
 import SquareItem from "./squareItem/SquareItem"
 import squares from "./squareItem/squares"
-import './ChessSquares.css'
+import './chessSquares.css'
 
 
 export default function ChessSquares() {

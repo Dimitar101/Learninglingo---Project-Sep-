@@ -1,0 +1,10 @@
+.hamburger {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(170, 126, 72);;
+}
+
+.hamburgerText {
+    font-size: x-large;
+    cursor: pointer;
+}

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import './hamburgerMenu.css'
 import SmallDoor from "./smallDoor/SmallDoor";
 
 
@@ -10,10 +11,16 @@ export default function HamburgerMenu() {
 
     return (
         <>
-            <button onClick={hamburgerClickHandler}>
-                {onOrOff ? 'Close' : 'Open'} Hamburger Menu
-            </button>
-            {onOrOff && <SmallDoor />}
+            <div className="hamburger">
+                <button onClick={hamburgerClickHandler} className="hamburgerText">
+                    <p>
+                        {onOrOff ? 'Close' : 'Open'} Hamburger Menu
+                    </p>
+                </button>
+            </div>
+            <div>
+                {onOrOff && <SmallDoor />}
+            </div>
         </>
     );
 }
