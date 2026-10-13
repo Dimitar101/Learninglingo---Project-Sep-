@@ -3,10 +3,14 @@
     justify-content: center;
     text-decoration: underline;
     font-size: x-large;
+
 }
 
 .smallDoorWraper {
+    background-color: rgb(170, 126, 72);
+
     padding-top: 20px;
+
 }
 
 p:hover {
