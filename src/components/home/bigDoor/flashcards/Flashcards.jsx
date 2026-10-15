@@ -19,7 +19,7 @@ export default function Flashcards() {
             });
     }, []);
 
-    async function statusChangeHandler(subjId, subject_C, isPractised_C) {
+    async function statusChangeHandler(subjId) {
         setSubjectCheck(prev => prev.map(sub => sub._id === subjId ? { ...sub, isPractised: !sub.isPractised } : sub));
     }
 
