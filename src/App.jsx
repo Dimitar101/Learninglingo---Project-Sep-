@@ -11,6 +11,7 @@ import ChessSquares from './components/home/bigDoor/chessSquares/ChessSquares'
 // import Plus from './components/hamburgerMenu/plus/Plus'
 import HamburgerMenu from './components/hamburgerMenu/HamburgerMenu'
 import RestTimer from './components/hamburgerMenu/smallDoor/restTimer/RestTimer'
+import Flashcards from './components/home/bigDoor/flashcards/Flashcards'
 
 
 export default function App() {
@@ -22,6 +23,7 @@ export default function App() {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/chessling" element={<ChessSquares />} />
+                <Route path="/flashcards" element={<Flashcards />} />
                 <Route path="/rest-timer" element={<RestTimer />} />
                 <Route path="/login" element={<Login />} />
             </Routes>

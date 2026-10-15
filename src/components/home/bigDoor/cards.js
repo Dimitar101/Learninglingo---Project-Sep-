@@ -9,10 +9,10 @@ const cards =
     },
     "2": {
         "id": "2",
-        "gameName": "XXX",
+        "gameName": "Flashcards",
         "img": "xxx",
-        "description": "asd",
-        "path": "/chessling"
+        "description": "xxx",
+        "path": "/flashcards"
     },
     "3": {
         "id": "3",
