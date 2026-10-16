@@ -3,21 +3,21 @@ const cards =
     "1": {
         "id": "1",
         "gameName": "XXX",
-        "img": "xxx",
+        "img": "../../../../src/assets/white.jpg",
         "description": "Practicing arithmetic and multiplication for young learners, emphasizing simplicity and fun – very easy and super engaging.",
         "path": "/calculator"
     },
     "2": {
         "id": "2",
         "gameName": "Flashcards",
-        "img": "xxx",
+        "img": "../../../../src/assets/white.jpg",
         "description": "xxx",
         "path": "/flashcards"
     },
     "3": {
         "id": "3",
         "gameName": "XXX",
-        "img": "xxx",
+        "img": "../../../../src/assets/white.jpg",
         "description": "Browse, upload, and like inspirational quotes that uplift and motivate. Join a community that spreads positivity daily.",
         "path": "/geo"
     },

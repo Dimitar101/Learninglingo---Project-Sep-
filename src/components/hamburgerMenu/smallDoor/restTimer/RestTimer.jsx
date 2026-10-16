@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./restTimer.css"
 
 
 export default function RestTimer() {
@@ -11,8 +12,11 @@ export default function RestTimer() {
 
     return (
         <>
-            <h2><u>Timer</u></h2>
-            <div>{seconds} seconds</div>
+            <div>
+                <h2 className="timeSign"><u>Timer</u></h2>
+                <div className="secondsPart">{seconds}</div>
+                <div className="secondsPart">seconds</div>
+            </div>
         </>
     );
 }

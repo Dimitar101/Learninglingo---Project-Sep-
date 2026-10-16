@@ -28,7 +28,7 @@ export default function Flashcards() {
         <>
             <h1 className="welcome-heading">Quick Dictionary</h1>
             <hr />
-            <p className="explain-welcome">(Use this tool for quick learning only, once you navigate from the page the dictionary answers will close again.)</p>
+            <div className="explain-welcome">Use this tool for quick learning only, once you navigate from the page the dictionary answers will close again.</div>
 
             <div className="table-wrapper">
                 <table>

@@ -1,0 +1,10 @@
+.timeSign {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.secondsPart {
+    display: flex;
+    justify-content: center;
+}
