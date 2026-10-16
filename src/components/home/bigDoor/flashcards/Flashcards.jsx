@@ -1,28 +1,20 @@
-import { useEffect, useState } from "react";
 import Word from "./Word";
 import './flashcards.css'
-// const url = 'http://localhost:3030/jsonstore/subjects';
+import useFetch from "../../../../hooks/useFetch";
 
 
 export default function Flashcards() {
-    const [subjectCheck, setSubjectCheck] = useState([]);
+    const url = 'http://localhost:3030/jsonstore/subjects';
 
-    useEffect(() => {
-        fetch('http://localhost:3030/jsonstore/subjects')
-            .then(res => res.json())
-            .then(data => {
-                const result = Object.values(data);
-                setSubjectCheck(result);
-            })
-            .catch(err => {
-                console.log(err.message);
-            });
-    }, []);
+    const { data: subjectCheck, setData: setSubjectCheck, isPending, error } = useFetch(url, [], result => Object.values(result));
 
     async function statusChangeHandler(subjId) {
         setSubjectCheck(prev => prev.map(sub => sub._id === subjId ? { ...sub, isPractised: !sub.isPractised } : sub));
     }
-
+    
+    if (error) {
+        return <div>Not Found</div>;
+    }
 
     return (
         <>
@@ -31,20 +23,23 @@ export default function Flashcards() {
             <div className="explain-welcome">Use this tool for quick learning only, once you navigate from the page the dictionary answers will close again.</div>
 
             <div className="table-wrapper">
-                <table>
-                    <tbody>
-                        {subjectCheck.map(subj =>
-                            <Word
-                                key={subj._id}
-                                _id={subj._id}
-                                subject={subj.subject}
-                                answer={subj.answer}
-                                isPractised={subj.isPractised}
-                                onStatusChangeAfterToggleBtnClick={statusChangeHandler}
-                            />
-                        )}
-                    </tbody>
-                </table>
+                {isPending
+                    ? <p>Loading...</p>
+                    : <table>
+                        <tbody>
+                            {subjectCheck.map(subj =>
+                                <Word
+                                    key={subj._id}
+                                    _id={subj._id}
+                                    subject={subj.subject}
+                                    answer={subj.answer}
+                                    isPractised={subj.isPractised}
+                                    onStatusChangeAfterToggleBtnClick={statusChangeHandler}
+                                />
+                            )}
+                        </tbody>
+                    </table>
+                }
             </div>
         </>
     );
